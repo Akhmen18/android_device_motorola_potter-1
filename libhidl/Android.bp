@@ -1,4 +1,4 @@
-cc_library_shared {
+/*cc_library_shared {
     name: "android.hidl.base@1.0",
     vendor_available: true,
     shared_libs: [
@@ -8,3 +8,4 @@ cc_library_shared {
         "libhidltransport",
     ],
 }
+*/
