@@ -304,7 +304,7 @@
     <integer name="config_defaultNotificationLedOff">5000</integer>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+<!--    <bool name="config_intrusiveBatteryLed">true</bool>-->
 
     <!-- Default color for notification LED is white. -->
     <color name="config_defaultNotificationColor">#ff0000ff</color>
@@ -316,11 +316,11 @@
 
     <!-- Does the battery LED support multiple colors?
          Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
+<!--    <bool name="config_multiColorBatteryLed">true</bool>-->
 
     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">true</bool>
+<!--    <bool name="config_ledCanPulse">true</bool>-->
 
     <!-- Default value for proximity check on screen wake
          NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
@@ -340,7 +340,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">64</integer>
+<!--    <integer name="config_deviceHardwareKeys">64</integer>-->
 
     <!-- Support in Surfaceflinger for blur layers.
          NOTE: This requires additional hardware-specific code. -->
