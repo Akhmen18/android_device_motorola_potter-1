@@ -1,12 +1,12 @@
 [
   {
-    "remote": "github",
+    "remote": "gh",
     "repository":  "LineageOS/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
     "branch": "lineage-15.1"
   },
   {
-    "remote": "github",
+    "remote": "gh",
     "repository": "boulzordev/android_vendor_motorola_potter",
     "target_path": "vendor/motorola/potter",
     "branch": "lineage-15.1-64"
