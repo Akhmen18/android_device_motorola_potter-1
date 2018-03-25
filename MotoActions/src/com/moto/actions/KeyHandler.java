@@ -149,7 +149,7 @@ public class KeyHandler implements DeviceKeyHandler {
                 "GestureWakeLock");
 
         final Resources resources = mContext.getResources();
-        mProximityTimeOut = resources.getInteger(
+      /*  mProximityTimeOut = resources.getInteger(
                 com.android.internal.R.integer.config_proximityCheckTimeout);
         mProximityWakeSupported = resources.getBoolean(
                 com.android.internal.R.bool.config_proximityCheckOnWake);
@@ -160,7 +160,7 @@ public class KeyHandler implements DeviceKeyHandler {
             mProximityWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
                     "ProximityWakeLock");
         }
-
+	*/
         mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         if (mVibrator == null || !mVibrator.hasVibrator()) {
             mVibrator = null;
@@ -726,7 +726,7 @@ public class KeyHandler implements DeviceKeyHandler {
         if (isProximityEnabledOnScreenOffGesturesFP() && !mFPScreenOffGesturesHandler.hasMessages(FP_ACTION_REQUEST)) {
             Message msg = mFPScreenOffGesturesHandler.obtainMessage(FP_ACTION_REQUEST);
             msg.arg1 = scanCode;
-            boolean defaultProximity = mContext.getResources().getBoolean(
+           /* boolean defaultProximity = mContext.getResources().getBoolean(
                     com.android.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault);
             boolean proximityWakeCheckEnabled = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.PROXIMITY_ON_WAKE, defaultProximity ? 1 : 0) == 1;
@@ -736,7 +736,7 @@ public class KeyHandler implements DeviceKeyHandler {
             } else {
                 mFPScreenOffGesturesHandler.sendMessage(msg);
             }
-        }else{
+       */ }else{
             processFPScancode(scanCode);
         }
     }
