@@ -15,13 +15,13 @@
 # limitations under the License.
 
 #APN
-$(call inherit-product, vendor/carbon/config/gsm.mk)
+#$(call inherit-product, vendor/carbon/config/gsm.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
 # Inherit some common GZOSP stuff.
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -29,7 +29,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := carbon_potter
+PRODUCT_NAME := slim_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
