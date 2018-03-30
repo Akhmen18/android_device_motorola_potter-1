@@ -59,7 +59,6 @@ import android.view.InputDevice;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.ViewConfiguration;
-import android.widget.Toast;
 
 import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
@@ -625,11 +624,6 @@ public class KeyHandler implements DeviceKeyHandler {
                 break;
             case ACTION_SCREENSHOT:
                 triggerVirtualKeypress(mHandler, KeyEvent.KEYCODE_SYSRQ);
-                break;
-            case ACTION_PIP:
-                if (!mKeyguardManager.inKeyguardRestrictedInputMode()) {
-                    goToPipMode();
-                }
                 break;
             case ACTION_LAST_APP:
                 if (!mKeyguardManager.inKeyguardRestrictedInputMode()) {
