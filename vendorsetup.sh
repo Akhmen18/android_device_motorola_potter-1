@@ -1,0 +1,3 @@
+add_lunch_combo aosvp_potter-userdebug
+add_lunch_combo aosvp_potter-user
+add_lunch_combo aosvp_potter-eng
