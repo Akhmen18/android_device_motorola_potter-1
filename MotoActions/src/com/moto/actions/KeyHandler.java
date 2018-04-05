@@ -472,6 +472,8 @@ public class KeyHandler implements DeviceKeyHandler {
         return node;
     }
 
+    public void handleNavbarToggle(boolean enabled){}
+
     public KeyEvent handleKeyEvent(KeyEvent event) {
         int scanCode = event.getScanCode();
 
