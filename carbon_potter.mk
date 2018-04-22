@@ -20,7 +20,7 @@ $(call inherit-product, vendor/carbon/config/gsm.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
-# Inherit some common GZOSP stuff.
+# Inherit some common carbon stuff.
 $(call inherit-product, vendor/carbon/config/common.mk)
 
 # Boot animation
